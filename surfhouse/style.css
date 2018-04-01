@@ -1,0 +1,758 @@
+@font-face {
+	font-family: "Roboto - Black Italic";
+	src: url(fonts/Roboto-BlackItalic.ttf);
+}
+@font-face {
+	font-family: "Roboto - Black";
+	src: url(fonts/Roboto-Black.ttf);
+}
+@font-face {
+	font-family: "Roboto";
+	src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+	font-family: "Raleway-ExtraBold";
+	src: url(fonts/Raleway-ExtraBold.ttf);
+}
+@font-face {
+	font-family: "Raleway-Regular";
+	src: url(fonts/Raleway-Regular.ttf);
+}
+@font-face {
+	font-family: "Raleway-Heavy";
+	src: url(fonts/Raleway-Heavy.ttf);
+}
+body {
+	margin: 0;
+}
+
+/*Обертка всего сайта*/
+.container {
+	width: 1500px;
+	margin: 0 auto;
+}
+
+/*Хэдер*/
+.main-header {
+	width: 100%;
+	height: 700px;
+	background-color: #abeafa;
+}
+
+/*Верхний блок хэдера*/
+/*Логотип*/
+.logo {
+	margin-left: 234px;
+	margin-top: 24px;
+}
+
+/*Панель социальных сетей*/
+.social-links {
+	float: right;
+	margin-top: 50px;
+	margin-right: 229px;
+}
+.social-links a {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+}
+.social-links a:hover{
+    opacity: 0.7;
+}
+.social-links a:last-child  {
+	margin-right: 0;
+}
+.social {
+	background: url('img/5-layers.png') no-repeat;
+}
+.social-facebook {
+	background-position: 6px 2px;
+}
+.social-twitter {
+	background-position: -20px 2px;
+}
+.social-youtube {
+	background-position: -48px 2px;
+}
+.social-pinterest {
+	background-position: -75px 2px;
+}
+.social-instagram {
+	background-position: -102px 2px;
+}
+
+/*Нижний блок хэдера*/
+/*WELCOME TO SURFHOUSE*/
+.welcome {
+	width: 270px;
+	height: 300px;
+	background-color: #fff51f;
+	margin-top: 200px;
+	margin-left: 165px;
+	float: left;
+}
+.welcome span {
+	display: inline-block;
+	color: #333333;
+	font-family: "Raleway-Regular";
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-top: 82px;
+	margin-left: 25px;
+}
+.welcome p {
+	color: #333333;
+	font-family: "Raleway-Regular";
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 14px;
+	margin-left: 22px;
+	margin-right: 30px;
+}
+
+/*JP FUNRIDE 2014*/
+.special_news {
+	float: right;
+	margin-top: 100px;
+	margin-right: 274px;
+	width: 313px;
+	font-size: 18px;
+
+}
+.special_news span {
+	font-family: "Raleway-ExtraBold";
+	font-size: 48px;
+	font-weight: 700;
+	color: #fff51f;
+	line-height: 34px;
+	text-transform: uppercase;
+}
+.special_news p {
+	margin-top: 0;
+	width: 315px;
+	color: #fff51f;
+	font-family: "Raleway-Regular";
+	font-weight: 400;
+	line-height: 24px;
+	margin-bottom: 62px;
+}
+
+/*Кнопка BUY NOW*/
+.special_news a {
+
+	width: 125px;
+	background-color: #fff51f;
+	text-decoration: none;
+	color: #000000;
+	font-family: "Raleway-Heavy";
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+	margin-left: 3px;
+	padding-top: 17px;
+	padding-bottom: 17px;
+}
+.special_news a:hover {
+	color: #fff51f;
+	background-color: #000000;
+	transition-duration: 1s;
+}
+
+/*Основаная часть*/
+/*Обертка*/
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+/*Панель продуктов*/
+.content {
+	margin-top: -20px;
+	z-index: 101;
+	width: 870px;
+	float: right;
+	background-color: #f8f8f8;
+}
+
+/*Заголовок панели продуктов*/
+.section-title {
+    margin-left: 25px;
+    margin-top: 30px;
+    margin-bottom: 33px;
+    color: #717171;
+	font-family: "Roboto - Black Italic", sans-serif;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+/*Секции каталога*/
+.catalog {
+    margin-bottom: 50px;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 100%;
+}
+
+/*Карточка товара*/
+.catalog-item {
+   position: relative;
+    float: left;
+    width: 270px;
+    height: 318px;
+    margin-bottom: 30px;
+	margin-right: 30px;
+    font-size: 16px;
+}
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+/*Фото товара в карточке*/
+.catalog-item img {
+	margin: 0 9px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+/*Уголки*/
+ .catalog-item .marker_img {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+}
+.catalog-item .marker_txt_white {
+	position: absolute;
+	top: 8px;
+	right: 5px;
+	color: #ffffff;
+	font-family: Roboto;
+	font-size: 9px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.catalog-item .marker_txt_black {
+	position: absolute;
+	top: 8px;
+	right: 5px;
+	color: #000000;
+	font-family: Roboto;
+	font-size: 9px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+/*Название товара в карточке*/
+.catalog-item h3 {
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+	max-width: 140px;
+	color: #333333;
+	font-family: "Roboto - Black Italic", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+/*Цена товара*/
+.catalog-item-price {
+    float: right;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    text-align: right;
+   	color: #333333;
+	font-family: "Roboto - Black Italic", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+/*Цена товара до скидки*/
+.catalog-item-price-sale {
+	float: right;
+	width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: right;
+   	color: #e24602;
+	font-family: "Roboto - Black Italic", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: line-through;
+}
+
+/*Боковая панель меню*/
+/*Блок панели общий*/
+.aside {
+	margin-top: -20px;
+	z-index: 101;
+	width: 270px;
+	float: left;
+}
+
+/*Меню*/
+.menu {
+	background-color: #26d2fc;
+}
+
+/*Заголовок MENU*/
+.menu span {
+	display: block;
+	background-color: #333333;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: "Roboto";
+	font-size: 14px;
+	padding-left: 40px;
+	padding-top: 32px;
+	padding-bottom: 20px;
+}
+
+/*Список меню*/
+.menu ul {
+	padding: 0;
+	margin: 0;
+}
+.menu li {
+	margin: 0;
+	list-style-type: none;
+	text-transform: uppercase;
+	font-family: "Roboto - Black";
+	font-size: 14px;
+	font-weight: 400;
+}
+.menu a {
+	padding-left: 40px;
+	text-decoration: none;
+	color: #000000;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.menu a:hover {
+	background-color: #333333;
+	color: #ffffff;
+}
+.menu a:active {
+	background-color: #333333;
+	color: #fafa00;
+}
+
+/*NOW IS OPEN!*/
+.banner {
+	width: 270px;
+	margin-top: 30px;
+	background-color: #e0e0e0;
+}
+.banner span {
+	display: inline-block;
+	font-family: "Raleway-Heavy";
+	font-size: 36px;
+	color: #333333;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-style: italic;
+	width: 110px;
+	margin-top: 120px;
+	margin-left: 142px;
+	margin-bottom: 73px;
+
+}
+
+/*Панель BRAND*/
+.brand {
+	width: 1170px;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+.brand img {
+	margin-top: 70px;
+	margin-bottom: 64px;
+	margin-left: 14px;
+
+}
+
+/*Панель Instagram*/
+.instagram {
+	width: 1170px;
+	background-color: #eaeaea;
+	margin: 0 auto;
+}
+
+/*Заголовок панели - верхняя часть блока*/
+.instagram_title {
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+.instagram_title p img {
+	vertical-align: middle;
+}
+.instagram p {
+	font-family: "Roboto - Black Italic", sans-serif;
+	font-size: 22px;
+	color: #333333;
+	text-align: center;
+	margin: 0;
+}
+.instagram p img {
+	margin-right: 10px;
+}
+.instagram p span {
+	font-size: 18px;
+}
+
+/*Галлерея Instagram*/
+.instagram_gallery {
+	padding-bottom: 60px;
+}
+.instagram_gallery img {
+	margin: 0;
+	margin-right: 8px;
+}
+.instagram_gallery img:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.instagram_gallery img:last-child {
+	margin-right: 0;
+}
+
+/*Панель больших кнопок соцсетей*/
+
+.big-social-icon {
+	width: 1170px;
+	margin: 0 auto;
+}
+.big_facebook, .big_twitter, .big_pinterest {
+	width: 390px;
+	display: block;
+	float: left;
+	margin: 0 auto;
+}
+.big_facebook img {
+	padding: 44px 0;
+}
+.big_facebook a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #3b5997;
+	text-align: center;
+}
+.big_facebook a:hover {
+	opacity: 0.8;
+}
+.big_twitter img {
+	padding: 49px 0;
+}
+.big_twitter a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #3fccfd;
+	text-align: center;
+}
+.big_twitter a:hover {
+	opacity: 0.8;
+}
+.big_pinterest img {
+	padding: 43px 0;
+}
+.big_pinterest a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #cb2027;
+	text-align: center;
+}
+.big_pinterest a:hover {
+	opacity: 0.8;
+}
+
+/*Футер*/
+.main-footer {
+	width: 100%;
+	background-color: #373737;
+	height: 348px;
+}
+
+/*Верхняя панель футера*/
+
+.footer_top {
+	padding-bottom: 65px;
+}
+.footer_basic {
+	display: block;
+	margin-top: 75px;
+	float: left;
+}
+
+/*Колонка Category*/
+.footer_1 {
+	margin-left: 192px;
+	width: 84px;
+}
+
+/*Колонка Our Account*/
+.footer_2 {
+	margin-left: 114px;
+	width: 113px;
+}
+
+/*Колонка Our Support*/
+.footer_3 {
+	margin-left: 87px;
+	width: 107px;
+}
+
+/*Колонка Newsletter*/
+.footer_4 {
+	margin-left: 80px;
+	width: 267px;
+}
+.footer_4 p {
+	width: 195px;
+}
+
+/*Колонка About Us*/
+.footer_5 {
+	margin-left: 46px;
+	width: 232px;
+}
+
+/*Заголовок колонки*/
+.footer_header {
+	display: inline-block;
+	margin-bottom: 30px;
+	color: #ffffff;
+	font-family: "Raleway-ExtraBold";
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 400;
+}
+.no_margin {
+	margin: 0;
+}
+.ten_margin {
+	margin-left: 10px;
+}
+
+/*Список в колонках Category - Our Account - Our Support*/
+.footer_basic ul {
+	margin: 0;
+	padding: 0;
+}
+.footer_basic li {
+	list-style-type: none;
+	color: #ffffff;
+	font-family: "Roboto";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+}
+.footer_basic li a {
+	text-decoration: none;
+	color: #ffffff;
+	font-family: "Roboto";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+}
+.footer_basic li a:hover {
+	color: #70d2fb;
+}
+.footer_basic li a:active {
+	color: #fafa00;
+}
+
+/*Колонка Newsletter*/
+.footer_basic p {
+	color: #ffffff;
+	font-family: "Roboto";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 12px;
+	padding-top: 8px;
+}
+.subscribe {
+	margin-top: 20px;
+	margin-bottom: 45px;
+	margin-left: 10px;
+}
+input {
+	width: 160px;
+	padding: 8px 0;
+	padding-left: 20px;
+	background-color: #fff51f;
+	opacity: 0.45;
+	color: #333333;
+	font-family: "Roboto";
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;;
+	outline: none;
+	border: none;
+	float: left;
+}
+
+/*Кнопка SUBMIT*/
+.btn {
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 14px 8px 14px;
+	background-color: #000000;
+	color: #ffffff;
+	font-family: "Roboto";
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-left: 0;
+}
+.btn:hover {
+	opacity: 0.8;
+}
+
+/*Панель способов оплаты*/
+.payment a {
+	display: inline-block;
+	margin-bottom: 0;
+	width: 36px;
+	height: 22px;
+	margin-right: 6px;
+}
+.payment a:hover {
+	opacity: 0.7;
+}
+.payment a:last-child {
+	margin-right: 0;
+}
+.ways_payment {
+	background: url('img/6-layers.png') no-repeat;
+}
+.payment-aex {
+	background-position: 0px 0px;
+}
+.payment-mastercard {
+	background-position: -46px 0px;
+}
+.payment-maestro {
+	background-position: -92px 0px;
+}
+.payment-paypal {
+	background-position: -139px 0px;
+}
+.payment-discover {
+	background-position: -185px 0px;
+}
+.payment-visa {
+	background-position: -231px 0px;
+}
+
+
+/*Колонка About Us*/
+.text_about {
+	color: #ffffff;
+	font-family: "Roboto";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 12px;
+}
+
+/*Phone, e-mail*/
+table {
+	border-collapse: collapse;
+}
+tr, td {
+	padding-top: 10px;
+	color: #ffffff;
+	font-family: "Roboto";
+	font-size: 14px;
+	font-weight: 400;
+}
+.table_padding {
+	padding-left: 10px;
+}
+table a {
+	text-decoration: none;
+	color: #faef03;
+}
+table a:hover {
+	text-decoration: underline;
+	color: #70d2fb;
+}
+
+/*Нижняя панель футера*/
+.footer_bottom {
+	background-color: #333333;
+	padding-top: 21px;
+	padding-bottom: 13px;
+}
+
+/*Копирайт*/
+.footer_bottom p {
+	margin-top: 0;
+	display: block;
+	color: #dad9d9;
+	font-family: "Roboto";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 21.6px;
+	margin-left: 170px;
+	margin-right: 550px;
+	float: left;
+}
+.footer_bottom p img {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.footer_bottom p span {
+	color: #ffffff;
+}
+
+/*Панель социальных сетей*/
+.footer_social-links a {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+}
+.footer_social-links a:hover{
+    opacity: 0.7;
+}
+.footer_social-links a:last-child {
+	margin-right: 0;
+}
+.social-footer {
+	background: url('img/7-layers.png') no-repeat;
+}
+.footer-facebook {
+	background-position: 6px 2px;
+}
+.footer-twitter {
+	background-position: -19px 2px;
+}
+.footer-pinterest {
+	background-position: -48px 2px;
+}
+.footer-google {
+	background-position: -75px 2px;
+}
+.footer-tumblr {
+	background-position: -102px 2px;
+}
+.footer-instagram {
+	background-position: -131px 2px;
+}
+.footer-rss {
+	background-position: -161px 2px;
+}
